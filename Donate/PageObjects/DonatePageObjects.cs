@@ -144,8 +144,8 @@ namespace Donate
         internal void GoTo()
         {
             Driver.Navigate().GoToUrl("https://qa.donate.cancer.org/");
-            wait.Until(ExpectedConditions.ElementIsVisible(Close));
-            Driver.FindElement(Close).Click();
+            //wait.Until(ExpectedConditions.ElementIsVisible(Close));
+            //Driver.FindElement(Close).Click();
             Assert.IsTrue(IsVisible,
                 $"Sample application page was not visible. Expected=>{"Donate Today | The American Cancer Society"}." +
                 $"Actual=>{Driver.Title}");

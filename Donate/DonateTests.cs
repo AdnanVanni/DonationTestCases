@@ -34,7 +34,7 @@ namespace Donate
            // chromeOptions.PageLoadStrategy = PageLoadStrategy.Eager;
 
 
-            //this three argument line solved the issue which takes timespan as well.
+            //this three argument line solved the issue and takes timespan as well.
             dr = new ChromeDriver(@"C:\Users\adnan.ali\source\repos\Donate\Donate\TestDriver", options, TimeSpan.FromMinutes(3));
            // dr.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
 
